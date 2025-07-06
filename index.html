@@ -1,0 +1,450 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poppy Marketing & Consulting - Service Menu</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Poppins for headers (semi-bold) and Raleway for body -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Raleway:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <style>
+        /* Define masculine brand colors from your palette */
+        :root {
+            --primary-purple: #5E50B9; /* Purple Primary */
+            --turquoise-accent: #47A3C2; /* Turquoise Accent */
+            --deep-purple: #53498C; /* Deep Purple */
+            --coral-accent: #FF6B8B; /* Coral Accent - New */
+            --white: #FFFFFF; /* White */
+            --light-gray: #F5F7FA; /* Light Gray */
+            --dark-gray: #333333; /* Dark Gray - for primary text */
+        }
+        
+        /* Apply Raleway to the body text */
+        body {
+            font-family: 'Raleway', sans-serif;
+            color: var(--dark-gray); /* Default body text color */
+        }
+        
+        /* Apply Poppins to headings */
+        .heading-font {
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        /* Hero section gradient using Deep Purple and Primary Purple for a masculine feel */
+        .hero-gradient {
+            background: linear-gradient(135deg, var(--deep-purple) 0%, var(--primary-purple) 100%);
+        }
+        
+        /* Card shadows adjusted to reflect the new primary purple */
+        /* Re-added box-shadow to bring back shadows on cards */
+        .card-shadow {
+            box-shadow: 0 10px 30px rgba(94, 80, 185, 0.15);
+        }
+        
+        /* Card hover effect with adjusted shadow color */
+        .card-hover:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 15px 40px rgba(94, 80, 185, 0.25);
+        }
+        
+        /* Primary button styling with Primary Purple and Deep Purple on hover */
+        .btn-primary {
+            background: var(--primary-purple);
+            color: white;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-primary:hover {
+            background: var(--deep-purple);
+            transform: scale(1.05);
+        }
+        
+        /* Utility classes for new color palette */
+        .text-primary-purple {
+            color: var(--primary-purple);
+        }
+        
+        .bg-primary-purple {
+            background-color: var(--primary-purple);
+        }
+        
+        .bg-light-gray {
+            background-color: var(--light-gray);
+        }
+        
+        .bg-white {
+            background-color: var(--white);
+        }
+        
+        .border-primary-purple {
+            border-color: var(--primary-purple);
+        }
+
+        .text-turquoise-accent {
+            color: var(--turquoise-accent);
+        }
+
+        /* New utility class for Coral Accent color */
+        .text-coral-accent {
+            color: var(--coral-accent);
+        }
+        
+        @media print {
+            body {
+                -webkit-print-color-adjust: exact;
+                color-adjust: exact;
+            }
+        }
+    </style>
+</head>
+<body class="bg-white">
+    <!-- Hero Section -->
+    <section class="hero-gradient py-20 px-6">
+        <div class="max-w-6xl mx-auto text-center">
+            <div class="mb-8">
+                <!-- Removed the logo image and added the business name as text -->
+                <h2 class="heading-font text-4xl font-semibold text-coral-accent mb-6">Poppy Marketing & Consulting</h2>
+            </div>
+            <!-- Headers now use Poppins semi-bold (font-semibold) -->
+            <h1 class="heading-font text-5xl font-semibold text-white mb-6">Explore Our Services</h1>
+            <p class="text-xl text-white opacity-90 max-w-3xl mx-auto">Custom websites, branding, and strategic design for businesses ready to grow.</p>
+        </div>
+    </section>
+
+    <!-- Website Packages -->
+    <section class="py-16 px-6">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="heading-font text-4xl font-semibold text-center text-gray-800 mb-12">Website Packages</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Starter Package -->
+                <div class="bg-white rounded-2xl p-8 card-shadow card-hover transition-all duration-300">
+                    <div class="text-center mb-6">
+                        <h3 class="heading-font text-2xl font-semibold text-gray-800 mb-3">Starter Brand Package</h3>
+                        <!-- Price updated to $1,250 -->
+                        <div class="text-4xl font-semibold text-primary-purple mb-2">$1,250</div>
+                        <p class="text-gray-600">Perfect for new businesses getting started</p>
+                    </div>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-turquoise-accent mt-1 mr-3"></i>
+                            <span>One custom-designed page (Wix Studio)</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-turquoise-accent mt-1 mr-3"></i>
+                            <span>Up to 5 thoughtfully designed sections (e.g. Hero, About, Services, Testimonials, Contact)</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-turquoise-accent mt-1 mr-3"></i>
+                            <span>Mobile-friendly formatting</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-turquoise-accent mt-1 mr-3"></i>
+                            <span>Contact or booking form</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-turquoise-accent mt-1 mr-3"></i>
+                            <span>Light SEO setup</span>
+                        </li>
+                    </ul>
+                    <div class="text-center mb-6">
+                        <!-- Time duration background changed to light-gray -->
+                        <div class="bg-light-gray rounded-lg p-3 mb-4">
+                            <i class="fas fa-clock text-primary-purple mr-2"></i>
+                            <span class="text-gray-700">3-4 weeks</span>
+                        </div>
+                        <button class="btn-primary px-8 py-3 rounded-full font-semibold hover:shadow-lg transition-all duration-300">Let's Talk</button>
+                    </div>
+                </div>
+
+                <!-- Small Biz Package -->
+                <div class="bg-white rounded-2xl p-8 card-shadow card-hover transition-all duration-300 border-2 border-primary-purple relative">
+                    <!-- "Most Popular" tag background changed to primary-purple -->
+                    <div class="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-primary-purple text-white px-4 py-1 rounded-full text-sm font-semibold">Most Popular</div>
+                    <div class="text-center mb-6">
+                        <h3 class="heading-font text-2xl font-semibold text-gray-800 mb-3">Small Biz Package</h3>
+                        <!-- Price updated to $2,000 -->
+                        <div class="text-4xl font-semibold text-primary-purple mb-2">$2,000</div>
+                        <p class="text-gray-600">Ideal for growing small businesses</p>
+                    </div>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-turquoise-accent mt-1 mr-3"></i>
+                            <span>Single custom logo</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-turquoise-accent mt-1 mr-3"></i>
+                            <span>2–5 custom-designed Wix Studio pages</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-turquoise-accent mt-1 mr-3"></i>
+                            <span>Mobile and tablet responsive design</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-turquoise-accent mt-1 mr-3"></i>
+                            <span>Booking, contact, or product section setup</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-turquoise-accent mt-1 mr-3"></i>
+                            <span>SEO basics and metadata</span>
+                        </li>
+                    </ul>
+                    <div class="text-center mb-6">
+                        <div class="bg-light-gray rounded-lg p-3 mb-4">
+                            <i class="fas fa-clock text-primary-purple mr-2"></i>
+                            <span class="text-gray-700">4-5 weeks</span>
+                        </div>
+                        <button class="btn-primary px-8 py-3 rounded-full font-semibold hover:shadow-lg transition-all duration-300">Let's Talk</button>
+                    </div>
+                </div>
+
+                <!-- Premium Package -->
+                <div class="bg-white rounded-2xl p-8 card-shadow card-hover transition-all duration-300">
+                    <div class="text-center mb-6">
+                        <h3 class="heading-font text-2xl font-semibold text-gray-800 mb-3">Premium Brand Package</h3>
+                        <div class="text-4xl font-semibold text-primary-purple mb-2">$2,500</div>
+                        <p class="text-gray-600">Complete solution for established businesses</p>
+                    </div>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-turquoise-accent mt-1 mr-3"></i>
+                            <span>6–10 fully custom Wix Studio pages</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-turquoise-accent mt-1 mr-3"></i>
+                            <span>Mobile, tablet, and desktop optimization</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-turquoise-accent mt-1 mr-3"></i>
+                            <span>Store, blog, calendar, or booking integration</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-turquoise-accent mt-1 mr-3"></i>
+                            <span>Advanced page structure + internal linking</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-turquoise-accent mt-1 mr-3"></i>
+                            <span>SEO setup</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-turquoise-accent mt-1 mr-3"></i>
+                            <span>Full Logo Kit + Brand Pack</span>
+                        </li>
+                    </ul>
+                    <div class="text-center mb-6">
+                        <div class="bg-light-gray rounded-lg p-3 mb-4">
+                            <i class="fas fa-clock text-primary-purple mr-2"></i>
+                            <span class="text-gray-700">6-8 weeks</span>
+                        </div>
+                        <button class="btn-primary px-8 py-3 rounded-full font-semibold hover:shadow-lg transition-all duration-300">Let's Talk</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Logo Design Services -->
+    <section class="py-16 px-6 bg-light-gray">
+        <div class="max-w-6xl mx-auto">
+            <!-- Heading changed to "Standalone Logo Design Services" -->
+            <h2 class="heading-font text-4xl font-semibold text-center text-gray-800 mb-12">Standalone Logo Design Services</h2>
+            <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <!-- Basic Logo Package -->
+                <div class="bg-white rounded-2xl p-8 card-shadow card-hover transition-all duration-300">
+                    <div class="text-center mb-6">
+                        <h3 class="heading-font text-2xl font-semibold text-gray-800 mb-3">Basic Logo Package</h3>
+                        <div class="text-4xl font-semibold text-primary-purple mb-2">$350</div>
+                        <p class="text-gray-600">Essential logo design for startups</p>
+                    </div>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-turquoise-accent mt-1 mr-3"></i>
+                            <span>3 initial logo concepts</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-turquoise-accent mt-1 mr-3"></i>
+                            <span>2 rounds of revisions</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-turquoise-accent mt-1 mr-3"></i>
+                            <span>Final files in color and black & white versions (all standard formats)</span>
+                        </li>
+                    </ul>
+                    <div class="text-center">
+                        <div class="bg-white rounded-lg p-3 mb-4">
+                            <i class="fas fa-clock text-primary-purple mr-2"></i>
+                            <span class="text-gray-700">1-2 weeks</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Logo + Brand Starter Kit -->
+                <div class="bg-white rounded-2xl p-8 card-shadow card-hover transition-all duration-300">
+                    <div class="text-center mb-6">
+                        <h3 class="heading-font text-2xl font-semibold text-gray-800 mb-3">Logo + Brand Starter Kit</h3>
+                        <div class="text-4xl font-semibold text-primary-purple mb-2">$600</div>
+                        <p class="text-gray-600">Complete brand foundation package</p>
+                    </div>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-turquoise-accent mt-1 mr-3"></i>
+                            <span>Final logo files in all formats</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-turquoise-accent mt-1 mr-3"></i>
+                            <span>Social media-ready logo versions (for IG, FB, LinkedIn, etc.)</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-turquoise-accent mt-1 mr-3"></i>
+                            <span>Brand guidelines document (mini brand board)</span>
+                        </li>
+                    </ul>
+                    <div class="text-center">
+                        <div class="bg-white rounded-lg p-3 mb-4">
+                            <i class="fas fa-clock text-primary-purple mr-2"></i>
+                            <span class="text-gray-700">2-3 weeks</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Refresh & Rebuild Section -->
+    <section class="py-16 px-6">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="heading-font text-4xl font-semibold text-center text-gray-800 mb-12">Refresh & Rebuild</h2>
+            <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <!-- Website Refresh -->
+                <div class="bg-white rounded-2xl p-8 card-shadow card-hover transition-all duration-300">
+                    <div class="text-center mb-6">
+                        <h3 class="heading-font text-2xl font-semibold text-gray-800 mb-3">Website Refresh</h3>
+                        <div class="text-4xl font-semibold text-primary-purple mb-2">$1,200</div>
+                        <p class="text-gray-600">Update your existing site with modern design</p>
+                    </div>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-turquoise-accent mt-1 mr-3"></i>
+                            <span>Visual redesign (up to 5 pages)</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-turquoise-accent mt-1 mr-3"></i>
+                            <span>Content optimization</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-turquoise-accent mt-1 mr-3"></i>
+                            <span>Mobile responsiveness</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-turquoise-accent mt-1 mr-3"></i>
+                            <span>Performance improvements</span>
+                        </li>
+                        <li class="flex items-start text-sm text-gray-500">
+                            <i class="fas fa-info-circle text-primary-purple mt-1 mr-3"></i>
+                            <span>This package is for clients with a live, functioning Wix website. If no current site, please see Website Rebuild. Additional pages: $150/page.</span>
+                        </li>
+                    </ul>
+                    <div class="text-center">
+                        <div class="bg-light-gray rounded-lg p-3 mb-4">
+                            <i class="fas fa-clock text-primary-purple mr-2"></i>
+                            <span class="text-gray-700">2-3 weeks</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Website Rebuild -->
+                <div class="bg-white rounded-2xl p-8 card-shadow card-hover transition-all duration-300">
+                    <div class="text-center mb-6">
+                        <h3 class="heading-font text-2xl font-semibold text-gray-800 mb-3">Website Rebuild</h3>
+                        <div class="text-4xl font-semibold text-primary-purple mb-2">$1,800</div>
+                        <p class="text-gray-600">Complete website reconstruction from scratch</p>
+                    </div>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-turquoise-accent mt-1 mr-3"></i>
+                            <span>Complete redesign (up to 5 pages)</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-turquoise-accent mt-1 mr-3"></i>
+                            <span>New platform migration</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-turquoise-accent mt-1 mr-3"></i>
+                            <span>Enhanced functionality</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-turquoise-accent mt-1 mr-3"></i>
+                            <span>SEO optimization</span>
+                        </li>
+                        <li class="flex items-start text-sm text-gray-500">
+                            <i class="fas fa-info-circle text-primary-purple mt-1 mr-3"></i>
+                            <span>This package is for building a new website from scratch or for clients without a current live site. Additional pages: $150/page.</span>
+                        </li>
+                    </ul>
+                    <div class="text-center">
+                        <div class="bg-light-gray rounded-lg p-3 mb-4">
+                            <i class="fas fa-clock text-primary-purple mr-2"></i>
+                            <span class="text-gray-700">4-6 weeks</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Add-Ons Table -->
+    <section class="py-16 px-6 bg-light-gray">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="heading-font text-4xl font-semibold text-center text-gray-800 mb-12">Add-On Services</h2>
+            <div class="bg-white rounded-2xl overflow-hidden card-shadow">
+                <table class="w-full">
+                    <thead class="bg-primary-purple text-white">
+                        <tr>
+                            <th class="px-6 py-4 text-left heading-font font-semibold">Add-On</th>
+                            <th class="px-6 py-4 text-left heading-font font-semibold">Price</th>
+                            <th class="px-6 py-4 text-left heading-font font-semibold">Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="border-b border-gray-100">
+                            <td class="px-6 py-4 font-medium text-gray-800">SEO & Schema Setup</td>
+                            <td class="px-6 py-4 text-primary-purple font-semibold">$300</td>
+                            <td class="px-6 py-4 text-gray-600">On-page SEO with metadata, title tags, and structured schema setup for better search visibility</td>
+                        </tr>
+                        <tr class="border-b border-gray-100">
+                            <td class="px-6 py-4 font-medium text-gray-800">Extra Logo Concepts</td>
+                            <td class="px-6 py-4 text-primary-purple font-semibold">$50</td>
+                            <td class="px-6 py-4 text-gray-600">Add 2 more initial logo options for deeper exploration</td>
+                        </tr>
+                        <tr class="border-b border-gray-100">
+                            <td class="px-6 py-4 font-medium text-gray-800">Additional Website Page</td>
+                            <td class="px-6 py-4 text-primary-purple font-semibold">$150/page</td>
+                            <td class="px-6 py-4 text-gray-600">Add an extra page beyond the standard package limits for Website Refresh or Rebuild</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call-to-Action Footer -->
+    <section class="py-20 px-6 hero-gradient">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="heading-font text-5xl font-semibold text-white mb-6">Ready to bring your brand to life?</h2>
+            <p class="text-xl text-white opacity-90 mb-8">Let's build something that feels like you and works for your business.</p>
+            <!-- Button text color changed to primary-purple -->
+            <a href="https://www.poppymarketingandconsulting.com/getintouch" class="inline-block bg-white text-primary-purple px-8 py-4 rounded-full font-semibold text-lg hover:bg-gray-100 transition-all duration-300 hover:scale-105 mb-12">Book a Free Consultation</a>
+            
+            <div class="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-8 text-white">
+                <div class="flex items-center">
+                    <i class="fas fa-envelope mr-3 text-xl"></i>
+                    <span class="text-lg">email@poppy-marketing.com</span>
+                </div>
+                <div class="flex items-center">
+                    <i class="fas fa-phone mr-3 text-xl"></i>
+                    <span class="text-lg">941.777.4933</span>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
