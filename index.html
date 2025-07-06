@@ -36,7 +36,6 @@
         }
         
         /* Card shadows adjusted to reflect the new primary purple */
-        /* Re-added box-shadow to bring back shadows on cards */
         .card-shadow {
             box-shadow: 0 10px 30px rgba(94, 80, 185, 0.15);
         }
@@ -152,7 +151,8 @@
                             <i class="fas fa-clock text-primary-purple mr-2"></i>
                             <span class="text-gray-700">3-4 weeks</span>
                         </div>
-                        <button class="btn-primary px-8 py-3 rounded-full font-semibold hover:shadow-lg transition-all duration-300">Let's Talk</button>
+                        <!-- Changed button to anchor tag linking to the consultation section -->
+                        <a href="#book-consultation" class="btn-primary px-8 py-3 rounded-full font-semibold hover:shadow-lg transition-all duration-300">Let's Talk</a>
                     </div>
                 </div>
 
@@ -193,7 +193,8 @@
                             <i class="fas fa-clock text-primary-purple mr-2"></i>
                             <span class="text-gray-700">4-5 weeks</span>
                         </div>
-                        <button class="btn-primary px-8 py-3 rounded-full font-semibold hover:shadow-lg transition-all duration-300">Let's Talk</button>
+                        <!-- Changed button to anchor tag linking to the consultation section -->
+                        <a href="#book-consultation" class="btn-primary px-8 py-3 rounded-full font-semibold hover:shadow-lg transition-all duration-300">Let's Talk</a>
                     </div>
                 </div>
 
@@ -235,7 +236,8 @@
                             <i class="fas fa-clock text-primary-purple mr-2"></i>
                             <span class="text-gray-700">6-8 weeks</span>
                         </div>
-                        <button class="btn-primary px-8 py-3 rounded-full font-semibold hover:shadow-lg transition-all duration-300">Let's Talk</button>
+                        <!-- Changed button to anchor tag linking to the consultation section -->
+                        <a href="#book-consultation" class="btn-primary px-8 py-3 rounded-full font-semibold hover:shadow-lg transition-all duration-300">Let's Talk</a>
                     </div>
                 </div>
             </div>
@@ -396,32 +398,35 @@
         <div class="max-w-4xl mx-auto">
             <h2 class="heading-font text-4xl font-semibold text-center text-gray-800 mb-12">Add-On Services</h2>
             <div class="bg-white rounded-2xl overflow-hidden card-shadow">
-                <table class="w-full">
-                    <thead class="bg-primary-purple text-white">
-                        <tr>
-                            <th class="px-6 py-4 text-left heading-font font-semibold">Add-On</th>
-                            <th class="px-6 py-4 text-left heading-font font-semibold">Price</th>
-                            <th class="px-6 py-4 text-left heading-font font-semibold">Description</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr class="border-b border-gray-100">
-                            <td class="px-6 py-4 font-medium text-gray-800">SEO & Schema Setup</td>
-                            <td class="px-6 py-4 text-primary-purple font-semibold">$300</td>
-                            <td class="px-6 py-4 text-gray-600">On-page SEO with metadata, title tags, and structured schema setup for better search visibility</td>
-                        </tr>
-                        <tr class="border-b border-gray-100">
-                            <td class="px-6 py-4 font-medium text-gray-800">Extra Logo Concepts</td>
-                            <td class="px-6 py-4 text-primary-purple font-semibold">$50</td>
-                            <td class="px-6 py-4 text-gray-600">Add 2 more initial logo options for deeper exploration</td>
-                        </tr>
-                        <tr class="border-b border-gray-100">
-                            <td class="px-6 py-4 font-medium text-gray-800">Additional Website Page</td>
-                            <td class="px-6 py-4 text-primary-purple font-semibold">$150/page</td>
-                            <td class="px-6 py-4 text-gray-600">Add an extra page beyond the standard package limits for Website Refresh or Rebuild</td>
-                        </tr>
-                    </tbody>
-                </table>
+                <!-- Added a div for horizontal scrolling on small screens -->
+                <div class="overflow-x-auto">
+                    <table class="w-full min-w-max"> <!-- min-w-max ensures table doesn't shrink too much -->
+                        <thead class="bg-primary-purple text-white">
+                            <tr>
+                                <th class="px-6 py-4 text-left heading-font font-semibold">Add-On</th>
+                                <th class="px-6 py-4 text-left heading-font font-semibold">Price</th>
+                                <th class="px-6 py-4 text-left heading-font font-semibold">Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="border-b border-gray-100">
+                                <td class="px-6 py-4 font-medium text-gray-800">SEO & Schema Setup</td>
+                                <td class="px-6 py-4 text-primary-purple font-semibold">$300</td>
+                                <td class="px-6 py-4 text-gray-600">On-page SEO with metadata, title tags, and structured schema setup for better search visibility</td>
+                            </tr>
+                            <tr class="border-b border-gray-100">
+                                <td class="px-6 py-4 font-medium text-gray-800">Extra Logo Concepts</td>
+                                <td class="px-6 py-4 text-primary-purple font-semibold">$50</td>
+                                <td class="px-6 py-4 text-gray-600">Add 2 more initial logo options for deeper exploration</td>
+                            </tr>
+                            <tr class="border-b border-gray-100">
+                                <td class="px-6 py-4 font-medium text-gray-800">Additional Website Page</td>
+                                <td class="px-6 py-4 text-primary-purple font-semibold">$150/page</td>
+                                <td class="px-6 py-4 text-gray-600">Add an extra page beyond the standard package limits for Website Refresh or Rebuild</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
         </div>
     </section>
@@ -431,8 +436,8 @@
         <div class="max-w-4xl mx-auto text-center">
             <h2 class="heading-font text-5xl font-semibold text-white mb-6">Ready to bring your brand to life?</h2>
             <p class="text-xl text-white opacity-90 mb-8">Let's build something that feels like you and works for your business.</p>
-            <!-- Button text color changed to primary-purple -->
-            <a href="https://www.poppymarketingandconsulting.com/getintouch" class="inline-block bg-white text-primary-purple px-8 py-4 rounded-full font-semibold text-lg hover:bg-gray-100 transition-all duration-300 hover:scale-105 mb-12">Book a Free Consultation</a>
+            <!-- Added ID for linking -->
+            <a href="https://www.poppymarketingandconsulting.com/getintouch" id="book-consultation" class="inline-block bg-white text-primary-purple px-8 py-4 rounded-full font-semibold text-lg hover:bg-gray-100 transition-all duration-300 hover:scale-105 mb-12">Book a Free Consultation</a>
             
             <div class="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-8 text-white">
                 <div class="flex items-center">
